@@ -124,31 +124,47 @@ aside ~ h3 {
 /* selector[attribute]{} */
 
 /* CSS [attribute] Selector */
+/* matches any element that has that attribute */
+div[title]{
+    border: 2px solid rgb(124, 123, 123);
+    background-color: rgb(206, 218, 230);
+}
 
-
+div[title="border"]{
+    text-align: center;
+}
 /* CSS [attribute="value"] Selector */
 /* matches the value exactly */
 
 
 /* CSS [attribute~="value"] Selector */
 /* matches the value containing a specified word */
-
+div[title~="border"]{
+    font-variant: small-caps;
+}
 
 /* CSS [attribute|="value"] Selector */
 /* matches a value or a value followed by a hyphen */
-
-
+div[title|="border"]{
+    color: white;
+}
 /* CSS [attribute^="value"] Selector */
 /* matches if the value starts with the specified value */
-
+div[title^="border"]{
+    background-color: rgb(100, 100, 141);
+}
 
 /* CSS [attribute$="value"] Selector */
 /* matches if the value ends with the specified value */
-
+div[title$="border"]{
+    background-color: pink;
+}
 
 /* CSS [attribute*="value"] Selector */
 /* matches contains the specified value */
-
+div[title*="s"]{
+    text-align: right;
+}
 
 
 /* CSS DISPLAYS */
