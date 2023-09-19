@@ -107,10 +107,19 @@ aside ~ h3 {
 
 /* Pseudo Elements - used to style specified parts of an element */
 /* selector::psuedo-element{} */
+#first-line::first-letter{
+    color: rgb(180, 124, 40);
+    font-size: 4em;
+}
 
+#first-line::first-line{
+    color: bisque;
+    font-variant: small-caps;
+}
 
-
-
+#after-example::after{
+    content: url('http: //picsum .photo/ 100px;');
+}
 /* Attribute Selectors - style HTML elements that have specific attributes or attribute values */
 /* selector[attribute]{} */
 
